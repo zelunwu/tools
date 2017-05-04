@@ -119,8 +119,10 @@
                     <hklmExists path="SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" name="15.0" />
                     <hkcuExists path="SOFTWARE\Wow6432Node\Microsoft\VisualStudio\SxS\VS7" name="15.0" />
                 </or>
-                <!-- TODO: hardcoded version -->
-                <fileExists name="$$\VC\Tools\MSVC\14.10.25017\bin\HostX64\x64\cl.exe" />
+                <fileExists name="$$\VC\Auxiliary\Build\Microsoft.VCToolsVersion.default.txt" />
+                <dirExists name="$$\..\..\.." />
+                <cmdReturns name="set &quot;vcroot=$$&quot; &amp; for /f &quot;delims= &quot; %a in ('type &quot;$$\VC\Auxiliary\Build\Microsoft.VCToolsVersion.default.txt&quot;') do @call echo %vcroot%\VC\Tools\MSVC\%a" />
+                <fileExists name="$$\bin\HostX64\x64\cl.exe" />
                 <dirExists name="$$\..\..\.." />
             </and>
         </VCROOT>

@@ -1,5 +1,6 @@
 XML configuration files for compiling MATLAB MEX-files using VS2017.
-Tested on Windows 10 64-bit with MATLAB R2016b and Visual Studio 2017 (Enterprise Edition).
+Tested on Windows 10 64-bit with MATLAB R2016b and Visual Studio 2017 (Enterprise Edition),
+but it should also work with the Community Edition.
 
 1. First copy the files to `MATLABROOT\bin\win64\mexopts` (this might trigger a UAC prompt).
 2. Next run `mex -setup` and `mex -setup C++` in MATLAB, and select VS2017 compilers.
