@@ -1,3 +1,6 @@
+clone from https://gist.github.com/ea4541d5621f3d62e67029e393e523a0.git
+Non-original 
+
 XML configuration files for compiling MATLAB MEX-files using VS2017.
 Tested on Windows 10 64-bit with MATLAB R2016b and Visual Studio 2017 (Enterprise Edition),
 but it should also work with the Community Edition.
